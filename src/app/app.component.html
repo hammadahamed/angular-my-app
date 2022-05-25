@@ -1,6 +1,5 @@
-<h2>Hola amigo!</h2>
-<hr>
-<li>Create 2 components - warning-alert, success-alert</li>
-<app-warning-alert></app-warning-alert>
-<app-success-alert></app-success-alert>
-<hr>
+<app-header (featureSelected)="changeSection($event)" [currentSection]="section"></app-header>
+<div class="">
+    <app-recipes *ngIf="section === 'recipes'" ></app-recipes>
+    <app-shopping-list *ngIf="section === 'shopping-list'"></app-shopping-list>
+</div> 

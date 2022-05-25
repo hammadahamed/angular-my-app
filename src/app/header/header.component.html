@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default mt-2">
+    <div class="flex justify-between items-center w-screen px-10">
+        <div class="flex ">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand text-3xl mr-10 font-semibold text-gray-600">Recipe Book</a>
+            </div>
+
+            <ul class="nav navbar-nav flex flex-row items-center gap-4">
+                <li><a href="#" class="{{currentSection === 'recipes' ? 'text-blue-600 font-bold' : '' }}"
+                        (click)="onSelect('recipes')">Recipes</a></li>
+                <li><a href="#" class="{{currentSection === 'shopping-list' ? 'text-blue-600 font-bold' : '' }}"
+                        (click)="onSelect('shopping-list')">Shopping List</a></li>
+            </ul>
+
+        </div>
+
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Manage
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<hr class="mx-10 mt-2">

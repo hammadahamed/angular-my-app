@@ -1,0 +1,8 @@
+<div class="flex justify-between items-center w-full p-2 border bg-gray-100 mt-4 rounded-lg cursor-pointer" (click)="selectRecipe()">
+    <div class="bg-gray-100">
+        <p class="h3 font-medium bg-gray-100">{{recipe.name}}</p>
+        <p>{{recipe.description}}</p>
+    </div>
+
+    <img [src]="recipe.imagePath" alt={{recipe.name}} class="object-cover h-20 w-20 rounded m-2">
+</div>

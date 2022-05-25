@@ -1,0 +1,5 @@
+<br>
+<div class="px-10 grid grid-cols-2 gap-5 w-full">
+    <app-recipe-list (selectedRecipe)="setRecipe($event)"></app-recipe-list>
+    <app-recipe-detail [recipe]="currentRecipe"></app-recipe-detail>
+</div>
